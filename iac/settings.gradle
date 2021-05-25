@@ -1,0 +1,4 @@
+rootProject.name = "url-shortener"
+include(
+	"cdk",
+)

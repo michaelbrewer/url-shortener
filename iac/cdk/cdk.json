@@ -1,0 +1,12 @@
+{
+  "app": "cd ../; ./gradlew -q cdk:run",
+  "context": {
+    "branch": "develop",
+    "env_dev": {
+      "zone_name": "<REPLACE-WITH-YOUR-ZONE-NAME>",
+      "hosted_zone_id": "<REPLACE-WITH-YOUR-HOSTED-ZONE-ID>",
+      "certificate_id": "<REPLACE-WITH-YOUR-ACM-CERT-ID>",
+      "watchful_email": "<REPLACE-WITH-YOUR-PREFERRED-EMAIL>"
+    }
+  }
+}

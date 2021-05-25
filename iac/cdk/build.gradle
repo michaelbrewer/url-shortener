@@ -1,0 +1,26 @@
+plugins {
+    id "application"
+}
+
+def cdkVersion = "1.105.0"
+dependencies {
+    // Needed for logging
+    implementation("org.slf4j:slf4j-simple:1.7.30")
+
+    // AWS Cloud Development Kit
+    implementation("software.amazon.awscdk:core:$cdkVersion")
+
+    // Respective AWS Construct Libraries
+    implementation("software.amazon.awscdk:iam:$cdkVersion")
+    implementation("software.amazon.awscdk:lambda:$cdkVersion")
+    implementation("software.amazon.awscdk:dynamodb:$cdkVersion")
+    implementation("software.amazon.awscdk:apigateway:$cdkVersion")
+    implementation("software.amazon.awscdk:route53-targets:$cdkVersion")
+
+    // https://github.com/cdklabs/cdk-watchful
+    implementation("com.github.eladb:cdk-watchful:0.5.147")
+}
+
+application {
+    mainClass.set("com.github.michaelbrewer.shortener.cdk.app.AppKt")
+}
