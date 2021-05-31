@@ -17,3 +17,4 @@ cdk.out
 # Code Coverage reports
 .coverage
 coverage.xml
+htmlcov/
