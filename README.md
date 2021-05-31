@@ -1,7 +1,7 @@
 # url-shortener
-URL Shortener CDK example
+URL Shortener AWS CDK example, see [IAC readme](iac/README.md) for more details
 
 ## TODO 
 
-- Add AWS Powertools
-- Add basic build instructions
+- Add Lambda Powertools
+- Add basic build instructions and makefile
