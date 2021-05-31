@@ -7,6 +7,7 @@ name = "pypi"
 aws-lambda-powertools = "*"
 aws-xray-sdk = "*"
 boto3 = "*"
+botocore = "*"
 
 [dev-packages]
 moto = {extras = ["all"], version = "*"}

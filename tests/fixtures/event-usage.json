@@ -1,0 +1,81 @@
+{
+  "resource": "/",
+  "path": "/",
+  "httpMethod": "GET",
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "en-us",
+    "Host": "go.101i.de",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15",
+    "X-Amzn-Trace-Id": "Root=1-60b4605a-003e42a8580d052b06ff2539",
+    "X-Forwarded-For": "24.25.211.231",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "en-us"
+    ],
+    "Host": [
+      "go.101i.de"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15"
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-60b4605a-003e42a8580d052b06ff2539"
+    ],
+    "X-Forwarded-For": [
+      "24.25.211.231"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "6a7syp2jla",
+    "resourcePath": "/",
+    "httpMethod": "GET",
+    "extendedRequestId": "ALP-IGNeoAMFi6g=",
+    "requestTime": "31/May/2021:04:04:42 +0000",
+    "path": "/",
+    "accountId": "254688924456",
+    "protocol": "HTTP/1.1",
+    "stage": "prod",
+    "domainPrefix": "go",
+    "requestTimeEpoch": 1622433882205,
+    "requestId": "bf37f6de-c55b-45c5-af21-b6c0731e27dd",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "24.25.211.231",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15",
+      "user": null
+    },
+    "domainName": "go.101i.de",
+    "apiId": "ojn16eip5k"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}

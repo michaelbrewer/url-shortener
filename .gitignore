@@ -13,3 +13,7 @@ build
 cdk.out
 
 .gradle/
+
+# Code Coverage reports
+.coverage
+coverage.xml
