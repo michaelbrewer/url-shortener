@@ -18,19 +18,19 @@
     "default": {
         "boto3": {
             "hashes": [
-                "sha256:5a30ba8be76bc73ca32b9ac2d344271a3f2c04a95fb52ffa95238b8caf82f06f",
-                "sha256:ef0747eaf1ec80489bcc698b03890a1a2e223d0ab6ebe2c086f654e5aafea045"
+                "sha256:1d24c6d1f5db4b52bb29f1dfe13fd3e9d95d9fa4634b0638a096f5a884173cde",
+                "sha256:8ee8766813864796be6c87ad762c6da4bfef603977931854a38f49fe4db06495"
             ],
             "index": "pypi",
-            "version": "==1.17.80"
+            "version": "==1.17.84"
         },
         "botocore": {
             "hashes": [
-                "sha256:a67923f9faa47833f13b4f3a3fc9a7f12499a58f51982faad4ddcc9132e59a1e",
-                "sha256:e47726efd7ebebc20f0747502747dab982489e6337ad24ca257b568e8216d300"
+                "sha256:75e1397b80aa8757a26636b949eebd20b3cf67e8f1ed80dc01170907e06ea45d",
+                "sha256:bc59eb748fcb07835613ebea6dcc2600ae1a8be0fae30e40b9c1e81b73262296"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'",
-            "version": "==1.20.80"
+            "version": "==1.20.84"
         },
         "jmespath": {
             "hashes": [
@@ -65,11 +65,11 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df",
-                "sha256:e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937"
+                "sha256:753a0374df26658f99d826cfe40394a686d05985786d946fbe4165b5148f5a7c",
+                "sha256:a7acd0977125325f516bda9735fa7142b909a8d01e8b2e4c8108d0984e6e0098"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
-            "version": "==1.26.4"
+            "version": "==1.26.5"
         }
     },
     "develop": {
