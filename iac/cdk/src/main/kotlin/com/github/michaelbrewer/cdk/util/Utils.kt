@@ -1,10 +1,7 @@
 package com.github.michaelbrewer.cdk.util
 
-import com.fasterxml.jackson.databind.JsonNode
-import com.fasterxml.jackson.databind.ObjectMapper
 import software.amazon.awscdk.core.App
 import software.amazon.awscdk.core.ConstructNode
-import software.amazon.awscdk.core.Stack
 
 fun envName(app: App): String {
     return app.node.tryGetContext("env") as String? ?: "dev"

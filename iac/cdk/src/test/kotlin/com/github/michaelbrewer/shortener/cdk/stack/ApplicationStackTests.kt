@@ -1,5 +1,8 @@
 package com.github.michaelbrewer.shortener.cdk.stack
 
+import com.fasterxml.jackson.databind.JsonNode
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.github.michaelbrewer.shortener.cdk.app.buildStacks
 import getStackTemplateJson
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
@@ -24,8 +27,10 @@ class ApplicationStackTest {
                 "watchful_email" to "watchful_email",
             )
         )
-        val stack = ApplicationStack(app, "updates-stack", env, "develop", StackProps.builder().build())
-        val jsonNode = getStackTemplateJson(stack)
+
+        buildStacks(app)
+
+        val jsonNode: JsonNode = ObjectMapper().valueToTree(app.synth().stacks.first().template)
 
         val outputValue = jsonNode["Outputs"]["DomainNameOutput"]["Value"].asText()
         Assertions.assertEquals(exampleValue, outputValue)
