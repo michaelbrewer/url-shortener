@@ -1,13 +1,14 @@
 import json
 import os
-from typing import Any, Dict
 import uuid
-import logging
+from typing import Any, Dict
 
 import boto3  # type: ignore
+from aws_lambda_powertools import Logger, Tracer
+from aws_lambda_powertools.logging.correlation_paths import API_GATEWAY_HTTP
 
-LOG = logging.getLogger()
-LOG.setLevel(logging.INFO)
+logger = Logger()
+tracer = Tracer()
 
 # Pull out the DynamoDB table name from the environment
 table_name = os.environ.get("TABLE_NAME")
@@ -23,6 +24,7 @@ def text_response(message: str, code: int = 200) -> Dict[str, Any]:
     }
 
 
+@tracer.capture_method
 def create_short_url(event: Dict[str, Any]) -> Dict[str, Any]:
     # Parse targetUrl
     target_url = event["queryStringParameters"]["targetUrl"]
@@ -44,13 +46,14 @@ def create_short_url(event: Dict[str, Any]) -> Dict[str, Any]:
     return text_response("Created URL: %s" % url)
 
 
+@tracer.capture_method
 def read_short_url(event: Dict[str, Any]) -> Dict[str, Any]:
     # Parse redirect ID from path
     slug_id = event["pathParameters"]["proxy"]
 
     # Load redirect target from DynamoDB
     response = table.get_item(Key={"id": slug_id})
-    LOG.debug("RESPONSE: " + json.dumps(response))
+    logger.debug("RESPONSE: " + json.dumps(response))
 
     item = response.get("Item", None)
     if item is None:
@@ -60,8 +63,10 @@ def read_short_url(event: Dict[str, Any]) -> Dict[str, Any]:
     return {"statusCode": 301, "headers": {"Location": item.get("target_url")}}
 
 
+@tracer.capture_lambda_handler
+@logger.inject_lambda_context(correlation_id_path=API_GATEWAY_HTTP)
 def lambda_handler(event: Dict[str, Any], _):
-    LOG.info("EVENT: " + json.dumps(event))
+    logger.info("EVENT: " + json.dumps(event))
 
     query_string_params = event.get("queryStringParameters")
     if query_string_params is not None:

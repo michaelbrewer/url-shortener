@@ -5,6 +5,7 @@ import com.github.eladb.watchful.WatchfulProps
 import com.github.michaelbrewer.cdk.stack.BrewStack
 import com.github.michaelbrewer.cdk.util.envSettings
 import com.github.michaelbrewer.cdk.util.requireNotNull
+import software.amazon.awscdk.core.BundlingOptions
 import software.amazon.awscdk.core.Construct
 import software.amazon.awscdk.core.Duration
 import software.amazon.awscdk.core.RemovalPolicy
@@ -21,6 +22,7 @@ import software.amazon.awscdk.services.lambda.Function
 import software.amazon.awscdk.services.lambda.FunctionProps
 import software.amazon.awscdk.services.lambda.Runtime
 import software.amazon.awscdk.services.lambda.Tracing
+import software.amazon.awscdk.services.s3.assets.AssetOptions
 
 class ApplicationStack(
     scope: Construct,
@@ -48,12 +50,41 @@ class ApplicationStack(
             "UrlShortenerFunction",
             FunctionProps
                 .builder()
-                .code(Code.fromAsset("../../src/"))
+                .code(
+                    Code.fromAsset(
+                        "../../src/",
+                        AssetOptions
+                            .builder()
+                            .bundling(
+                                BundlingOptions
+                                    .builder()
+                                    .image(Runtime.PYTHON_3_8.bundlingImage)
+                                    .command(
+                                        mutableListOf(
+                                            "bash",
+                                            "-c",
+                                            "pip install -r requirements.txt -t /asset-output && cp -au . /asset-output"
+                                        )
+                                    )
+                                    .build()
+                            )
+                            .build()
+                    )
+                )
                 .handler("app.lambda_handler")
                 .timeout(Duration.seconds(5))
                 .memorySize(512)
                 .runtime(Runtime.PYTHON_3_8)
                 .tracing(Tracing.ACTIVE)
+                .environment(mutableMapOf(
+                    "LOG_LEVEL" to "DEBUG",
+                    "POWERTOOLS_SERVICE_NAME" to "virtual-currency-service",
+                    "POWERTOOLS_METRICS_NAMESPACE" to "payments",
+                    "POWERTOOLS_TRACE_MIDDLEWARES" to "true",
+                    "POWERTOOLS_TRACER_CAPTURE_RESPONSE" to "true",
+                    "POWERTOOLS_TRACER_CAPTURE_ERROR" to "true",
+                    "POWERTOOLS_LOGGER_LOG_EVENT" to "true",
+                ))
                 .build()
         )
 

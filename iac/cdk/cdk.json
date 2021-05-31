@@ -3,10 +3,10 @@
   "context": {
     "branch": "develop",
     "env_dev": {
-      "zone_name": "<REPLACE-WITH-YOUR-ZONE-NAME>",
-      "hosted_zone_id": "<REPLACE-WITH-YOUR-HOSTED-ZONE-ID>",
-      "certificate_id": "<REPLACE-WITH-YOUR-ACM-CERT-ID>",
-      "watchful_email": "<REPLACE-WITH-YOUR-PREFERRED-EMAIL>"
+      "zone_name": "101i.de",
+      "hosted_zone_id": "Z0470217S9PR9FF3RTP0",
+      "certificate_id": "61b4378a-fa88-4ad5-828f-781e4a599a7c",
+      "watchful_email": "mikebrew@gmail.com"
     }
   }
 }

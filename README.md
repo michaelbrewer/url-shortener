@@ -1,7 +1,13 @@
 # url-shortener
-URL Shortener AWS CDK example, see [IAC readme](iac/README.md) for more details
+URL Shortener AWS CDK example.
 
-## TODO 
+# Building the Python Lambda
 
-- Add Lambda Powertools
-- Add basic build instructions and makefile
+```shell
+# Install the dev dependencies
+make dev
+# Build and run the unit tests
+make pr
+```
+
+See [IAC ReadMe](iac/README.md) for more details on how to deploy via AWS CDK

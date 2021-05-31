@@ -4,10 +4,34 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+aws-lambda-powertools = "*"
+aws-xray-sdk = "*"
 boto3 = "*"
 
 [dev-packages]
+moto = {extras = ["all"], version = "*"}
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+black = "*"
+flake8 = "*"
+flake8-black = "*"
+flake8-builtins = "*"
+flake8-comprehensions = "*"
+flake8-debugger = "*"
+flake8-fixme = "*"
+flake8-isort = "*"
+flake8-variables-names = "*"
+isort = "*"
+bandit = "*"
+radon = "*"
+xenon ="*"
+flake8-eradicate = "*"
+flake8-bugbear = "*"
 mypy = "*"
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
