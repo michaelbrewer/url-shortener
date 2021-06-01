@@ -31,6 +31,11 @@ class ApplicationStack(
     branch: String,
     props: StackProps
 ) : BrewStack(scope, id, environment, branch, props) {
+    companion object {
+        val DEFAULT_MAX_DURATION = Duration.seconds(5)
+        const val DEFAULT_MEMORY_SIZE = 512
+    }
+
     init {
         // Define the table that maps short codes to URLs.
         val table = Table(
@@ -72,8 +77,8 @@ class ApplicationStack(
                     )
                 )
                 .handler("app.lambda_handler")
-                .timeout(Duration.seconds(5))
-                .memorySize(512)
+                .timeout(DEFAULT_MAX_DURATION)
+                .memorySize(DEFAULT_MEMORY_SIZE)
                 .runtime(Runtime.PYTHON_3_8)
                 .tracing(Tracing.ACTIVE)
                 .environment(mutableMapOf(

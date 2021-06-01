@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test
 import software.amazon.awscdk.core.App
 import software.amazon.awscdk.core.StackProps
 
-class ApplicationStackTest {
+class ApplicationStackTests {
     @Test
     fun checkCanSynth() {
         val app = App()

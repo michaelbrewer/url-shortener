@@ -30,6 +30,10 @@ open class BrewStack(scope: Construct,
         branch: String,
         props: StackProps
 ) : Stack(scope, id, props) {
+    companion object {
+        val DEFAULT_DNS_TTL = Duration.minutes(6)
+    }
+
     private val namespace = nameSpace(environment, branch)
     private val settings = envSettings(this.node, environment)
 
@@ -90,7 +94,7 @@ open class BrewStack(scope: Construct,
             .recordName(subDomain)
             .comment("ARecord for $label")
             .target(RecordTarget.fromAlias(ApiGateway(api)))
-            .ttl(Duration.seconds(60))
+            .ttl(DEFAULT_DNS_TTL)
             .build()
     }
 }
