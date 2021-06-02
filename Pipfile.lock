@@ -667,11 +667,11 @@
                 "all"
             ],
             "hashes": [
-                "sha256:039f7c6e49ccafd67a374d97a9b85a7b607514560302e7f4f46fb077da72a914",
-                "sha256:a7e4338ad63363f0127e8f99bee6760b724d37916caa11be26d71da7ae35b9fb"
+                "sha256:774f8b187d75b19508b6488119533df7ed604eff370d8d806eb29dd2ce466fcd",
+                "sha256:c8fff36a4ebc998d01d1bb75adea787beb733c1b125905ad14c36122b4296e78"
             ],
             "index": "pypi",
-            "version": "==2.0.9.dev8"
+            "version": "==2.0.9.dev9"
         },
         "mypy": {
             "hashes": [
@@ -965,7 +965,6 @@
                 "sha256:fdc842473cd33f45ff6bce46aea678a54e3d21f1b61a7750ce3c498eedfe25d6",
                 "sha256:fe69978f3f768926cfa37b867e3843918e012cf83f680806599ddce33c2c68b0"
             ],
-            "markers": "python_version != '3.4' and python_version != '3.5'",
             "version": "==5.4.1"
         },
         "radon": {
