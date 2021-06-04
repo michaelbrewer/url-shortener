@@ -20,7 +20,6 @@ URL Shortener AWS CDK example.
 ![URL Shortener Service Architecture](./media/architecture.png)
 
 
-
 # Building the Python Lambda
 
 > NOTE: Python 3.8+ is required
@@ -46,6 +45,9 @@ See [IAC ReadMe](iac/README.md) for more details on how to deploy via AWS CDK
 - [DORA research program](https://www.devops-research.com/research.html) - DORA's State of DevOps research program represents six years of research and data from over 31,000 professionals worldwide
 
 ### GitHub actions
+
+General GitHub actions used by this project
+
 - [CodeQL](https://securitylab.github.com/tools/codeql/) - Discover vulnerabilities across a codebase with CodeQL
 - [Dependabot](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates) - Dependabot security updates
 - [Python build](https://docs.github.com/en/actions/guides/building-and-testing-python) - Building and testing Python
@@ -53,17 +55,24 @@ See [IAC ReadMe](iac/README.md) for more details on how to deploy via AWS CDK
 - [CodeCoverage](https://about.codecov.io) - Code coverage reporting
 
 ### Python AWS Lambda tools
+
+Tools and libraries used for developing Python AWS Lambdas
+
+- [Lambda Powertools](https://github.com/awslabs/aws-lambda-powertools-python) - A suite of utilities for AWS Lambda Functions that makes tracing with AWS X-Ray, structured logging and creating custom metrics asynchronously easier
 - [PipEnv](https://pipenv.pypa.io/en/latest/) - Python dependency management and manages virtualenv
+- [PreCommit](https://pre-commit.com) - A framework for managing and maintaining multi-language pre-commit hooks.
 - [Flake8](https://flake8.pycqa.org/en/latest/) - Python code style linting
 - [Black](https://github.com/psf/black) - The uncompromising Python code formatter
 - [iSort](https://pycqa.github.io/isort/) - Python utility to sort imports alphabetically, and automatically separated into sections and by type
+- [Radon](https://github.com/rubik/radon/) & [Xenon](https://github.com/rubik/xenon) - Various code metrics for Python code
+- [MyPy](https://github.com/python/mypy) - Optional Static Typing for Python
 - [PyTest](https://docs.pytest.org/en/6.2.x/index.html) - Testing framework for Python
 - [Moto](https://github.com/spulec/moto) - A library that allows you to easily mock out tests based on AWS infrastructure.
-- [Lambda Powertools](https://github.com/awslabs/aws-lambda-powertools-python) - A suite of utilities for AWS Lambda Functions that makes tracing with AWS X-Ray, structured logging and creating custom metrics asynchronously easier
-- [PreCommit](https://pre-commit.com) - A framework for managing and maintaining multi-language pre-commit hooks.
-- [Radon](https://github.com/rubik/radon/) & [Xenon](https://github.com/rubik/xenon) - Various code metrics for Python code
 
 ### Infrastructure code tools
+
+Tools and libraries used for building the infrastructure code
+
 - [Gradle Versions Plugin](https://github.com/ben-manes/gradle-versions-plugin) - plugin provides a task to determine which dependencies have updates
 - [AWS CDK](https://aws.amazon.com/cdk/) - Define cloud infrastructure using familiar programming languages
 - [Junit 5](https://junit.org/junit5/docs/current/user-guide/) - JUnit 5
