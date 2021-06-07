@@ -18,7 +18,7 @@ dependencies {
     implementation("software.amazon.awscdk:route53-targets:$cdkVersion")
 
     // https://github.com/cdklabs/cdk-watchful
-    implementation("com.github.eladb:cdk-watchful:0.5.147")
+    implementation("com.github.eladb:cdk-watchful:0.5.150")
 }
 
 application {
