@@ -11,7 +11,7 @@ logger = Logger()
 tracer = Tracer()
 
 # Pull out the DynamoDB table name from the environment
-table_name = os.environ.get("TABLE_NAME")
+table_name = os.environ["TABLE_NAME"]
 ddb = boto3.resource("dynamodb")
 table = ddb.Table(table_name)
 
