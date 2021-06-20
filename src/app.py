@@ -17,6 +17,20 @@ table = ddb.Table(table_name)
 
 
 def text_response(message: str, code: int = 200) -> Dict[str, Any]:
+    """Build text response
+
+    Parameters
+    ----------
+    message : str
+        Message body
+    code :
+        Http status code
+
+    Returns
+    -------
+    Dict
+        API gateway response
+    """
     return {
         "statusCode": code,
         "headers": {"Content-Type": "text/plain"},
@@ -26,6 +40,18 @@ def text_response(message: str, code: int = 200) -> Dict[str, Any]:
 
 @tracer.capture_method
 def create_short_url(event: Dict[str, Any]) -> Dict[str, Any]:
+    """Create a new shortened url
+
+    Parameters
+    ----------
+    event : Dict
+        API Gateway Event
+
+    Returns
+    -------
+    Dict
+        API gateway response
+    """
     # Parse targetUrl
     target_url = event["queryStringParameters"]["targetUrl"]
 
@@ -48,6 +74,18 @@ def create_short_url(event: Dict[str, Any]) -> Dict[str, Any]:
 
 @tracer.capture_method
 def read_short_url(event: Dict[str, Any]) -> Dict[str, Any]:
+    """Redirect to the destination url
+
+    Parameters
+    ----------
+    event : Dict
+        API Gateway Event
+
+    Returns
+    -------
+    Dict
+        API gateway response
+    """
     # Parse redirect ID from path
     slug_id = event["pathParameters"]["proxy"]
 
@@ -66,6 +104,20 @@ def read_short_url(event: Dict[str, Any]) -> Dict[str, Any]:
 @tracer.capture_lambda_handler
 @logger.inject_lambda_context(correlation_id_path=API_GATEWAY_HTTP)
 def lambda_handler(event: Dict[str, Any], _):
+    """Lambda event handler
+
+    Parameters
+    ----------
+    event : Dict
+        API Gateway Response
+    _ : Any
+        Lambda Context
+
+    Returns
+    -------
+    Dict
+        API Gateway Response
+    """
     logger.info("EVENT: " + json.dumps(event))
 
     query_string_params = event.get("queryStringParameters")
