@@ -98,7 +98,7 @@
                 "sha256:4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece",
                 "sha256:c4fdf4019605b6e5423637e01bc9fe4daef873709a7973e195ceba0a62bbc844"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
             "version": "==1.26.7"
         },
         "wrapt": {
@@ -965,7 +965,7 @@
                 "sha256:4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece",
                 "sha256:c4fdf4019605b6e5423637e01bc9fe4daef873709a7973e195ceba0a62bbc844"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
             "version": "==1.26.7"
         },
         "werkzeug": {
@@ -978,11 +978,11 @@
         },
         "xenon": {
             "hashes": [
-                "sha256:a167b4c329fbea7cd84b148007ba92142f46b88ca095488c175dc7a8a8007ee9",
-                "sha256:eda949fbf3cfb4851d49d97e961e2b18a6b66fbecaf285dc89230775d2b2a99f"
+                "sha256:4c3d7157d9ae058364e130c831702e4a65a1f729d4b4def912418ed09772c851",
+                "sha256:cd5cad0930673d0e52609712c63fe4721a8f4c4342dc338bd7ea5fa0666b8515"
             ],
             "index": "pypi",
-            "version": "==0.7.3"
+            "version": "==0.8.0"
         },
         "xmltodict": {
             "hashes": [
