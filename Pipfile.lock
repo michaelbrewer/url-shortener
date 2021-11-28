@@ -620,21 +620,13 @@
             ],
             "version": "==0.6.1"
         },
-        "more-itertools": {
-            "hashes": [
-                "sha256:0a2fd25d343c08d7e7212071820e7e7ea2f41d8fb45d6bc8a00cd6ce3b7aab88",
-                "sha256:88afff98d83d08fe5e4049b81e2b54c06ebb6b3871a600040865c7a592061cbb"
-            ],
-            "markers": "python_version >= '3.5'",
-            "version": "==8.11.0"
-        },
         "moto": {
             "hashes": [
-                "sha256:ad4d0f1fbe9a7ff91246308079c578a45e3e1315aedf7db1c2cae5d3f2211718",
-                "sha256:ffc0153632adf5363fa6fd40f4244994dfa223019b2e5c08921e02ad89422e4f"
+                "sha256:9dd772426c56083a43c7d9c543183b644d70039df32e907d05bc7d7189a4dde1",
+                "sha256:fef15c831b1356b22beeb4f1b4694945597485bdc111039f1b304ab091141444"
             ],
             "index": "pypi",
-            "version": "==2.2.13"
+            "version": "==2.2.16"
         },
         "mypy": {
             "hashes": [
