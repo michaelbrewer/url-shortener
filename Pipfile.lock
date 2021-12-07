@@ -98,7 +98,7 @@
                 "sha256:4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece",
                 "sha256:c4fdf4019605b6e5423637e01bc9fe4daef873709a7973e195ceba0a62bbc844"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
             "version": "==1.26.7"
         },
         "wrapt": {
@@ -622,11 +622,11 @@
         },
         "moto": {
             "hashes": [
-                "sha256:9dd772426c56083a43c7d9c543183b644d70039df32e907d05bc7d7189a4dde1",
-                "sha256:fef15c831b1356b22beeb4f1b4694945597485bdc111039f1b304ab091141444"
+                "sha256:221ebd16b41b3ae157554ca5e540a8c1b4b1c93443cbf854c1f04751194c51b6",
+                "sha256:73aa14a650cb3bf02ca720b343618a57dda4c2c1d1166708a4c5c98ea9013b29"
             ],
             "index": "pypi",
-            "version": "==2.2.16"
+            "version": "==2.2.17"
         },
         "mypy": {
             "hashes": [
@@ -1003,7 +1003,7 @@
                 "sha256:4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece",
                 "sha256:c4fdf4019605b6e5423637e01bc9fe4daef873709a7973e195ceba0a62bbc844"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
             "version": "==1.26.7"
         },
         "werkzeug": {
