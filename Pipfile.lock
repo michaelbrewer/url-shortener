@@ -50,10 +50,10 @@
         },
         "fastjsonschema": {
             "hashes": [
-                "sha256:671f36d225b3493629b5e789428660109528f373cf4b8a22bac6fa2f8191c2d2",
-                "sha256:fa2f4bb1e31419c5eb1150f2e0545921712c10c34165b86d33f08f5562ad4b85"
+                "sha256:2a84755f22eb4c944c83c18d8f40705612376d178d2a5dfe50b0ecca3c11d610",
+                "sha256:5fb095151a88b166e6cda6f527ce83775bf24b3d13e1adb67c690300f3fab0a1"
             ],
-            "version": "==2.15.1"
+            "version": "==2.15.2"
         },
         "future": {
             "hashes": [
@@ -622,11 +622,11 @@
         },
         "moto": {
             "hashes": [
-                "sha256:221ebd16b41b3ae157554ca5e540a8c1b4b1c93443cbf854c1f04751194c51b6",
-                "sha256:73aa14a650cb3bf02ca720b343618a57dda4c2c1d1166708a4c5c98ea9013b29"
+                "sha256:b723172729f8dd06ae3f966cea588a629896ed9918266e921463774874d51001",
+                "sha256:e33f13e49d3c10944e7ab3feffb9a842e47f7735c78630989ee63008cebb4118"
             ],
             "index": "pypi",
-            "version": "==2.2.17"
+            "version": "==2.2.18"
         },
         "mypy": {
             "hashes": [
@@ -937,11 +937,11 @@
         },
         "setuptools": {
             "hashes": [
-                "sha256:6d10741ff20b89cd8c6a536ee9dc90d3002dec0226c78fb98605bfb9ef8a7adf",
-                "sha256:d144f85102f999444d06f9c0e8c737fd0194f10f2f7e5fdb77573f6e2fa4fad0"
+                "sha256:22c7348c6d2976a52632c67f7ab0cdf40147db7789f9aed18734643fe9cf3373",
+                "sha256:4ce92f1e1f8f01233ee9952c04f6b81d1e02939d6e1b488428154974a4d0783e"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==59.5.0"
+            "version": "==59.6.0"
         },
         "six": {
             "hashes": [
