@@ -4,7 +4,7 @@ plugins {
 	id("jacoco")
 	id("org.jetbrains.kotlin.jvm") version "1.6.10" apply(false)
 	id("org.jetbrains.kotlin.kapt") version "1.6.10" apply(false)
-	id("com.github.ben-manes.versions") version "0.39.0" apply(false)
+	id("com.github.ben-manes.versions") version "0.40.0" apply(false)
 	id("io.gitlab.arturbosch.detekt") version "1.19.0" apply(false)
 }
 
@@ -80,10 +80,10 @@ task codeCoverageReport(type: JacocoReport) {
         sourceSets it.sourceSets.main
     }
     reports {
-        xml.enabled true
+        xml.required = true
         xml.destination new File("${buildDir}/reports/jacoco/report.xml")
-        html.enabled true
-        csv.enabled false
+        html.required = true
+        csv.required =false
     }
 }
 codeCoverageReport.dependsOn {

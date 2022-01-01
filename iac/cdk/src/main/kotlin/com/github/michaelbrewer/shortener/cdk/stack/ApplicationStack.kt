@@ -63,7 +63,7 @@ class ApplicationStack(
                             .bundling(
                                 BundlingOptions
                                     .builder()
-                                    .image(Runtime.PYTHON_3_8.bundlingImage)
+                                    .image(Runtime.PYTHON_3_9.bundlingImage)
                                     .command(
                                         mutableListOf(
                                             "bash",
@@ -79,7 +79,7 @@ class ApplicationStack(
                 .handler("app.lambda_handler")
                 .timeout(DEFAULT_MAX_DURATION)
                 .memorySize(DEFAULT_MEMORY_SIZE)
-                .runtime(Runtime.PYTHON_3_8)
+                .runtime(Runtime.PYTHON_3_9)
                 .tracing(Tracing.ACTIVE)
                 .environment(mutableMapOf(
                     "LOG_LEVEL" to "DEBUG",
