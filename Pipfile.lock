@@ -429,11 +429,11 @@
         },
         "flake8-bugbear": {
             "hashes": [
-                "sha256:152e64a86f6bff6e295d630ccc993f62434c1fd2b20d2fae47547cb1c1b868e0",
-                "sha256:19fe179ee3286e16198603c438788e2949e79f31d653f0bdb56d53fb69217bd0"
+                "sha256:e0dc2a36474490d5b1a2d57f9e4ef570abc09f07cbb712b29802e28a2367ff19",
+                "sha256:ec5ec92195720cee1589315416b844ffa5e82f73a78e65329e8055322df1e939"
             ],
             "index": "pypi",
-            "version": "==22.3.20"
+            "version": "==22.3.23"
         },
         "flake8-builtins": {
             "hashes": [
@@ -914,7 +914,7 @@
                 "sha256:1a9462dcc3347a79b1f1c0271fbe79e844580bb598bafa1ed208b94da3cdcd42",
                 "sha256:21c85e0fe4b9a155d0799430b0ad741cdce7e359660ccbd8b530613e8df88ce2"
             ],
-            "markers": "python_version < '3.10'",
+            "markers": "python_version >= '3.6'",
             "version": "==4.1.1"
         },
         "urllib3": {
