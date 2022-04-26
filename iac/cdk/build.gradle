@@ -2,7 +2,7 @@ plugins {
     id "application"
 }
 
-def cdkVersion = "1.152.0"
+def cdkVersion = "1.153.1"
 dependencies {
     // Needed for logging
     implementation("org.slf4j:slf4j-simple:1.7.36")
