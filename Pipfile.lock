@@ -618,11 +618,11 @@
         },
         "moto": {
             "hashes": [
-                "sha256:2ff083c9a91dafed62d3ae19f393d28987db93fae6fe242a145cf1b6298d1e84",
-                "sha256:51552b2dfa99a539bca8737a66601b7404be01d2c53a41556a2197b18c1cf172"
+                "sha256:20607a0fd0cf6530e05ffb623ca84d3f45d50bddbcec2a33705a0cf471e71289",
+                "sha256:4ab6fb8dd150343e115d75e3dbdb5a8f850fc7236790819d7cef438c11ee6e89"
             ],
             "index": "pypi",
-            "version": "==3.1.6"
+            "version": "==3.1.7"
         },
         "mypy": {
             "hashes": [
@@ -909,7 +909,7 @@
                 "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
                 "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"
             ],
-            "markers": "python_version < '3.11'",
+            "markers": "python_version >= '3.7'",
             "version": "==2.0.1"
         },
         "typing-extensions": {
