@@ -456,11 +456,11 @@
         },
         "flake8-debugger": {
             "hashes": [
-                "sha256:82e64faa72e18d1bdd0000407502ebb8ecffa7bc027c62b9d4110ce27c091032",
-                "sha256:e43dc777f7db1481db473210101ec2df2bd39a45b149d7218a618e954177eda6"
+                "sha256:0a5e55aeddcc81da631ad9c8c366e7318998f83ff00985a49e6b3ecf61e571bf",
+                "sha256:52b002560941e36d9bf806fca2523dc7fb8560a295d5f1a6e15ac2ded7a73840"
             ],
             "index": "pypi",
-            "version": "==4.0.0"
+            "version": "==4.1.2"
         },
         "flake8-eradicate": {
             "hashes": [
