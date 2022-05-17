@@ -618,11 +618,11 @@
         },
         "moto": {
             "hashes": [
-                "sha256:19dd772ab1092ef8b74a4dd801dbdf1cf6f3b181c1dff5f2343884162e33bf6f",
-                "sha256:bde95005ec42a88448a98809397030f9e886387f469dcd2fcbc7f38d75858872"
+                "sha256:8928ec168e5fd88b1127413b2fa570a80d45f25182cdad793edd208d07825269",
+                "sha256:ba683e70950b6579189bc12d74c1477aa036c090c6ad8b151a22f5896c005113"
             ],
             "index": "pypi",
-            "version": "==3.1.8"
+            "version": "==3.1.9"
         },
         "mypy": {
             "hashes": [
