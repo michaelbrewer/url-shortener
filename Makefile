@@ -35,7 +35,7 @@ outdated:
 	pipenv update --outdated
 
 update-requirements:
-	pipenv lock -r > src/requirements.txt
+	pipenv requirements > src/requirements.txt
 
 security-baseline:
 	pipenv run bandit -r src
