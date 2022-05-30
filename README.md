@@ -6,7 +6,7 @@
 [![Code style: ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-URL Shortener AWS CDK example.
+URL Shortener AWS CDK example and using AWS Lambda Powertools for Python
 
 # High level infrastructure architecture
 
