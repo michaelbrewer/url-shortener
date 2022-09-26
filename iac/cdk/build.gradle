@@ -5,7 +5,7 @@ plugins {
 def cdkVersion = "1.169.0"
 dependencies {
     // Needed for logging
-    implementation("org.slf4j:slf4j-simple:2.0.0")
+    implementation("org.slf4j:slf4j-simple:2.0.2")
 
     // AWS Cloud Development Kit
     implementation("software.amazon.awscdk:core:$cdkVersion")
